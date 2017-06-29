@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+          <SubSystem>
+    <Name>Arm Length</Name>
+    <xPCName>data_acq_passiveV5_test/Arm Length</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Base</Name>
+    <xPCName>data_acq_passiveV5_test/Base</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Elevation</Name>
+    <xPCName>data_acq_passiveV5_test/Elevation</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Impedance Control</Name>
+    <xPCName>data_acq_passiveV5_test/Impedance Control</xPCName>
+        <SubSystem>
+    <Name>Discrete PID Controller (2DOF)1</Name>
+    <xPCName>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1</xPCName>
+    
+                <block>
+            <blkName>Filter</blkName>
+            <xpcblkName>Impedance Control/Discrete PID Controller (2DOF)1/Filter</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1/Filter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>gainval</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Integrator</blkName>
+            <xpcblkName>Impedance Control/Discrete PID Controller (2DOF)1/Integrator</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1/Integrator</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>gainval</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Derivative Gain</blkName>
+            <xpcblkName>Impedance Control/Discrete PID Controller (2DOF)1/Derivative Gain</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1/Derivative Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>D</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Filter Coefficient</blkName>
+            <xpcblkName>Impedance Control/Discrete PID Controller (2DOF)1/Filter Coefficient</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1/Filter Coefficient</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Integral Gain</blkName>
+            <xpcblkName>Impedance Control/Discrete PID Controller (2DOF)1/Integral Gain</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1/Integral Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>I</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Proportional Gain</blkName>
+            <xpcblkName>Impedance Control/Discrete PID Controller (2DOF)1/Proportional Gain</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1/Proportional Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>P</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Setpoint Weighting
+(Derivative)</blkName>
+            <xpcblkName>Impedance Control/Discrete PID Controller (2DOF)1/Setpoint Weighting (Derivative)</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1/Setpoint Weighting (Derivative)</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>c</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Setpoint Weighting
+(Proportional)</blkName>
+            <xpcblkName>Impedance Control/Discrete PID Controller (2DOF)1/Setpoint Weighting (Proportional)</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1/Setpoint Weighting (Proportional)</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>b</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Filter</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Filter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Integrator</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Integrator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Derivative Gain</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Derivative Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Filter Coefficient</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Filter Coefficient</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Integral Gain</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Integral Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Proportional Gain</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Proportional Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Setpoint Weighting
+(Derivative)</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Setpoint Weighting (Derivative)</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Setpoint Weighting
+(Proportional)</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Setpoint Weighting (Proportional)</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Sum</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Sum2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Sum3</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/Sum3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>SumD</sigName>
+              <xpcsigName>Impedance Control/Discrete PID Controller (2DOF)1/SumD</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>data_acq_passiveV5_test/Impedance Control/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function2</Name>
+    <xPCName>data_acq_passiveV5_test/Impedance Control/MATLAB Function2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function3</Name>
+    <xPCName>data_acq_passiveV5_test/Impedance Control/MATLAB Function3</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>Discrete PID Controller (2DOF)1</blkName>
+            <xpcblkName>Impedance Control/Discrete PID Controller (2DOF)1</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete PID Controller (2DOF)1</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>P</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>I</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>D</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>b</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>c</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Dead Zone</blkName>
+            <xpcblkName>Impedance Control/Dead Zone</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Dead Zone</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>LowerValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>UpperValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Dead Zone1</blkName>
+            <xpcblkName>Impedance Control/Dead Zone1</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Dead Zone1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>LowerValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>UpperValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>F2c Cal1</blkName>
+            <xpcblkName>Impedance Control/F2c Cal1</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/F2c Cal1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Impedance Control/Gain2</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>Impedance Control/Gain3</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Saturation1</blkName>
+            <xpcblkName>Impedance Control/Saturation1</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Saturation1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Setup 1</blkName>
+            <xpcblkName>Impedance Control/Setup 1</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Setup 1</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 4]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 14]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 14]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P17</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P18</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P19</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P20</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P21</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P22</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P23</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P24</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Switch1</blkName>
+            <xpcblkName>Impedance Control/Switch1</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Switch1</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Discrete Filter</blkName>
+            <xpcblkName>Impedance Control/Discrete Filter</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Impedance Control/Discrete Filter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Numerator</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>Denominator</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialStates</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>Impedance Control/MATLAB Function/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>Impedance Control/MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function2</sigName>
+              <xpcsigName>Impedance Control/MATLAB Function2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function3</sigName>
+              <xpcsigName>Impedance Control/MATLAB Function3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Dead Zone</sigName>
+              <xpcsigName>Impedance Control/Dead Zone</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Dead Zone1</sigName>
+              <xpcsigName>Impedance Control/Dead Zone1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Derivative4</sigName>
+              <xpcsigName>Impedance Control/Derivative4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Digital Clock</sigName>
+              <xpcsigName>Impedance Control/Digital Clock</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>F2c Cal1</sigName>
+              <xpcsigName>Impedance Control/F2c Cal1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Impedance Control/Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>Impedance Control/Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Saturation1</sigName>
+              <xpcsigName>Impedance Control/Saturation1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>CAN Pack1</sigName>
+              <xpcsigName>Impedance Control/CAN Pack1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>CAN Unpack2/p1</sigName>
+              <xpcsigName>Impedance Control/CAN Unpack2/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>CAN Unpack2/p2</sigName>
+              <xpcsigName>Impedance Control/CAN Unpack2/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>CAN Unpack4/p1</sigName>
+              <xpcsigName>Impedance Control/CAN Unpack4/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>CAN Unpack4/p2</sigName>
+              <xpcsigName>Impedance Control/CAN Unpack4/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>CAN Unpack4/p3</sigName>
+              <xpcsigName>Impedance Control/CAN Unpack4/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Receive position 2</sigName>
+              <xpcsigName>Impedance Control/Receive position 2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Receive position 4</sigName>
+              <xpcsigName>Impedance Control/Receive position 4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch1</sigName>
+              <xpcsigName>Impedance Control/Switch1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Discrete Filter</sigName>
+              <xpcsigName>Impedance Control/Discrete Filter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Lowpass Filter</Name>
+    <xPCName>data_acq_passiveV5_test/Lowpass Filter</xPCName>
+    
+                <block>
+            <blkName>Generated Filter Block</blkName>
+            <xpcblkName>Lowpass Filter/Generated Filter Block</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/Lowpass Filter/Generated Filter Block</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialStates</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>Coefficients</paramName>
+          <dim>[1, 706]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Generated Filter Block</sigName>
+              <xpcsigName>Lowpass Filter/Generated Filter Block</xpcsigName>
+              <sigWidth>5</sigWidth>
+              <sigDim>[5, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Pitch</Name>
+    <xPCName>data_acq_passiveV5_test/Pitch</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope (xPC) 1</Name>
+    <xPCName>data_acq_passiveV5_test/Scope (xPC) 1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope (xPC) 6</Name>
+    <xPCName>data_acq_passiveV5_test/Scope (xPC) 6</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope (xPC) 7</Name>
+    <xPCName>data_acq_passiveV5_test/Scope (xPC) 7</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope (xPC) 9</Name>
+    <xPCName>data_acq_passiveV5_test/Scope (xPC) 9</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Yaw</Name>
+    <xPCName>data_acq_passiveV5_test/Yaw</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>data_acq_passiveV5_test/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>xyz_func</Name>
+    <xPCName>data_acq_passiveV5_test/xyz_func</xPCName>
+    
+    
+    </SubSystem>
+
+                  <block>
+            <blkName>FE</blkName>
+            <xpcblkName>FE</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/FE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>PCI-6251 AD1</blkName>
+            <xpcblkName>PCI-6251 AD1</xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/PCI-6251 AD1</SLblockPath>
+            <isSrc>[1 0 7]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 7]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 7]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 7]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>PS
+</blkName>
+            <xpcblkName>PS </xpcblkName>
+            <SLblockPath>data_acq_passiveV5_test/PS </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>MATLAB Function/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p3</sigName>
+              <xpcsigName>MATLAB Function/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p4</sigName>
+              <xpcsigName>MATLAB Function/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p5</sigName>
+              <xpcsigName>MATLAB Function/p5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p6</sigName>
+              <xpcsigName>MATLAB Function/p6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p7</sigName>
+              <xpcsigName>MATLAB Function/p7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>xyz_func/p1</sigName>
+              <xpcsigName>xyz_func/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>xyz_func/p2</sigName>
+              <xpcsigName>xyz_func/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>xyz_func/p3</sigName>
+              <xpcsigName>xyz_func/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Bottom_Froce
+</sigName>
+              <xpcsigName>Bottom_Froce </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Top_Force</sigName>
+              <xpcsigName>Top_Force</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>FE</sigName>
+              <xpcsigName>FE</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>PCI-6251 AD1/p1</sigName>
+              <xpcsigName>PCI-6251 AD1/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>PCI-6251 AD1/p2</sigName>
+              <xpcsigName>PCI-6251 AD1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>PCI-6251 AD1/p3</sigName>
+              <xpcsigName>PCI-6251 AD1/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>PCI-6251 AD1/p4</sigName>
+              <xpcsigName>PCI-6251 AD1/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>PCI-6251 AD1/p5</sigName>
+              <xpcsigName>PCI-6251 AD1/p5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>PCI-6251 AD1/p6</sigName>
+              <xpcsigName>PCI-6251 AD1/p6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>PCI-6251 AD1/p7</sigName>
+              <xpcsigName>PCI-6251 AD1/p7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>PS
+</sigName>
+              <xpcsigName>PS </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Lowpass Filter1</sigName>
+              <xpcsigName>Lowpass Filter1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Lowpass Filter2</sigName>
+              <xpcsigName>Lowpass Filter2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+<block>
+   <blkName>Model Parameters</blkName>
+   <xpcblkName>Model Parameters</xpcblkName>
+   <SLblockPath>. </SLblockPath>
+   <isSrc>[0 1 1]</isSrc>
+   <parameter>
+      <paramName>offset</paramName>
+          <dim>[1,2]</dim>
+   </parameter>
+</block>
+</Root>
