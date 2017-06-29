@@ -1,0 +1,278 @@
+# EESchema Netlist Version 1.1 created  5/20/2013 4:21:15 PM
+(
+ ( /519A8DEA C1 C1 33nF
+  ( 1 N-000010 )
+  ( 2 N-000021 )
+ )
+ ( /4FBA9D72 C1 C2 0.1uF
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /519A8DE4 C1 C3 33nF
+  ( 1 N-000028 )
+  ( 2 N-000026 )
+ )
+ ( /519A8DDA C1 C4 33nF
+  ( 1 N-000027 )
+  ( 2 N-000019 )
+ )
+ ( /519A8D7B C1 C5 0.1uF
+  ( 1 N-000018 )
+  ( 2 GND )
+ )
+ ( /4FBA9D65 C1 C6 0.1uF
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /519A8D4E C1V5 C7 10uF
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /4FBA9D02 DIP-16__300 IC1 INA125P
+  ( 1 VCC )
+  ( 2 VCC )
+  ( 3 GND )
+  ( 4 N-000022 )
+  ( 5 N-000013 )
+  ( 6 N-000010 )
+  ( 7 N-000021 )
+  ( 8 N-000023 )
+  ( 9 N-000016 )
+  ( 10 N-000017 )
+  ( 11 N-000017 )
+  ( 12 GND )
+  ( 13 ? )
+  ( 14 ? )
+  ( 15 N-000018 )
+  ( 16 ? )
+ )
+ ( /4FBA9D1D DIP-16__300 IC2 INA2126P
+  ( 1 N-000026 )
+  ( 2 N-000028 )
+  ( 3 N-000025 )
+  ( 4 N-000012 )
+  ( 5 N-000013 )
+  ( 6 VCC )
+  ( 7 VCC )
+  ( 8 GND )
+  ( 9 VCC )
+  ( 10 N-000014 )
+  ( 11 N-000014 )
+  ( 12 N-000013 )
+  ( 13 N-000024 )
+  ( 14 N-000015 )
+  ( 15 N-000027 )
+  ( 16 N-000019 )
+ )
+ ( /4FBAA79B PIN_ARRAY_4x1 P1 CONN_OUT
+  ( 1 N-000017 )
+  ( 2 N-000013 )
+  ( 3 VCC )
+  ( 4 N-000013 )
+  ( 5 N-000014 )
+  ( 6 N-000013 )
+ )
+ ( /4FBA9FB3 PIN_ARRAY_4x1 P2 CONN_X
+  ( 1 N-000018 )
+  ( 2 N-000010 )
+  ( 3 N-000021 )
+  ( 4 GND )
+ )
+ ( /4FBAA5CE PIN_ARRAY_4x1 P3 CONN_Y
+  ( 1 N-000018 )
+  ( 2 N-000028 )
+  ( 3 N-000026 )
+  ( 4 GND )
+ )
+ ( /4FBAA5DF PIN_ARRAY-6X1 P4 CONN_Z
+  ( 1 N-000018 )
+  ( 2 N-000027 )
+  ( 3 N-000019 )
+  ( 4 GND )
+ )
+ ( /4FBAB5D9 PIN_ARRAY_4x1 P5 CONN_PWR
+  ( 1 VCC )
+  ( 2 VCC )
+  ( 3 GND )
+  ( 4 GND )
+ )
+ ( /4FBA9F07 TO39EBC Q1 2N2219
+  ( 1 N-000018 )
+  ( 2 N-000022 )
+  ( 3 VCC )
+ )
+ ( /519A8BA6 R1 R1 15k
+  ( 1 N-000018 )
+  ( 2 N-000005 )
+ )
+ ( /4FBA9EB2 R4 R2 42R2
+  ( 1 N-000023 )
+  ( 2 N-000016 )
+ )
+ ( /519A8BA7 R1 R3 15k
+  ( 1 GND )
+  ( 2 N-000009 )
+ )
+ ( /519A8B11 R1 R4 15k
+  ( 1 N-000018 )
+  ( 2 N-000002 )
+ )
+ ( /4FBA9E91 R1 R5 33R0
+  ( 1 N-000025 )
+  ( 2 N-000012 )
+ )
+ ( /519A8B10 R1 R6 15k
+  ( 1 GND )
+  ( 2 N-000001 )
+ )
+ ( /519A89BC R1 R7 15k
+  ( 1 N-000018 )
+  ( 2 N-000004 )
+ )
+ ( /4FBA9EA6 R1 R8 33R0
+  ( 1 N-000024 )
+  ( 2 N-000015 )
+ )
+ ( /519A89C3 R1 R9 15k
+  ( 1 GND )
+  ( 2 N-000003 )
+ )
+ ( /4FBAA210 R4 R10 750R
+  ( 1 N-000013 )
+  ( 2 VCC )
+ )
+ ( /4FBAA23A R4 R11 750R
+  ( 1 N-000013 )
+  ( 2 GND )
+ )
+ ( /519A8BA5 RV2 RV1 100k
+  ( 1 N-000009 )
+  ( 2 N-000010 )
+  ( 3 N-000005 )
+ )
+ ( /519A8B12 RV2 RV2 100k
+  ( 1 N-000001 )
+  ( 2 N-000028 )
+  ( 3 N-000002 )
+ )
+ ( /519A8965 RV2 RV3 100k
+  ( 1 N-000003 )
+  ( 2 N-000027 )
+  ( 3 N-000004 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ CP*
+ SM*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}

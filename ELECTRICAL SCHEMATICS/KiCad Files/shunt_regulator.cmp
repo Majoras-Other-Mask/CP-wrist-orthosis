@@ -1,0 +1,122 @@
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 5/25/2012 4:00:35 PM
+
+BeginCmp
+TimeStamp = /4FBA91AA;
+Reference = +36V1;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA91C1;
+Reference = +36V2;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8EB7;
+Reference = C1;
+ValeurCmp = 3.3mF;
+IdModule  = CP36V;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8EBF;
+Reference = C2;
+ValeurCmp = 3.3mF;
+IdModule  = CP36V;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8EC8;
+Reference = C3;
+ValeurCmp = 3.3mF;
+IdModule  = CP36V;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8EF4;
+Reference = C4;
+ValeurCmp = 0.1uF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA91EF;
+Reference = COM1;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA91CD;
+Reference = COM2;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8FB7;
+Reference = D1;
+ValeurCmp = 12V_Zener;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8F62;
+Reference = Q1;
+ValeurCmp = 2N4920;
+IdModule  = TO220_VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8F51;
+Reference = Q2;
+ValeurCmp = 2N3055;
+IdModule  = TO3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8F76;
+Reference = R1;
+ValeurCmp = 1.5k;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8FC8;
+Reference = R2;
+ValeurCmp = 500R;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8F87;
+Reference = R3;
+ValeurCmp = 3.3k;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA90F1;
+Reference = RP1;
+ValeurCmp = 25R_50W;
+IdModule  = R7;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA90D2;
+Reference = RP2;
+ValeurCmp = 25R_50W;
+IdModule  = R7;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FBA8FA4;
+Reference = RT1;
+ValeurCmp = 1R_NTC;
+IdModule  = R5;
+EndCmp
+
+EndListe
