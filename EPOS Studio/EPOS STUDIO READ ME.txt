@@ -1,0 +1,102 @@
+CONNECTING THE MOTOR CONTROLLERS TO THE MOTOR USING EPOS STUDIO
+
+AUTHOR: Mark Gotthelf
+DATE: 6/27/17
+Created with EPOS Studio 2.00 Revision 2
+
+CREATING A CONFIG FILE
+The motors need to be connected to EPOS Studio in order to function.
+The installer for EPOS Studio should be found in this folder and called 
+'EPOS_Positioning_Controller.exe'. If the installer can not be found you should
+be able to download it from maxon motors' website. 
+
+The motors need a configuration to connect to EPOS studio. 
+The current configuration file is called 'config.pjm'.
+To generate a new configuration file follow these steps:
+1. Open EPOS Studio and turn on the motor controllers 
+2. Once EPOS Studio has started a window should display 'Step 1: Introduction'
+		If this window does not display go to File > New Project
+3. Click the option 'EPOS2 Project' then next
+4. Name your project and choose the file directory then click finish
+5. Connect the motor controller that has the CAN connection coming in from 
+		the target PC to the USB of the host computer.
+6. Click on Extras > Device Catalog
+7. Under 'Communication' tab on the left side choose 'USB'  then click 
+		'Add Communication' 
+8. Under the 'Communication' tab on the left hand side you should see 
+		a file tree that has Local Host > USB > USB0
+9. Right click 'USB0' then left click 'Scanning Device' 
+10. On the new 'Scanning Devices' window press 'Start Scanning' on the 
+		lower left hand corner. 
+11. 'EPOS2 [Node 1]' should appear when the scanning ends. Click on this line 
+		thenb press 'OK' 
+12. Under the 'Communication' tab on the left side of the screen you should now 
+		see 'EPOS2 [Node 1] and 'CAN' on the tree. 
+13. Right click on 'EPOS2 [Node 1] and then click 'Connect' 
+14. An error may appear. Clear the error on the bottom of the screen by right 
+		clicking on error and then choosing 'Clear'
+15. Right click on 'CAN' under the 'Communication' tab on the left side of the 
+		screen then choose 'Scanning Devices'
+16. On the new 'Scanning Devices' window press 'Start Scanning' on the 
+		lower left hand corner. 
+17. 'EPOS2 [Node 2]' should appear when the scanning ends. Click on this line 
+		thenb press 'OK' 
+18. Under the 'Communication' tab on the left side of the screen you should now 
+		see 'EPOS2 [Node 8] on the tree. 
+19. Right click on 'EPOS2 [Node 1] and then click 'Connect' 
+20. Choose the 'Wizards' tab on the left side of the screen.
+21. At the top of the 'Wizards tab' under Device Selection ensure that 
+		'EPOS2 [Node 1] is choosen. 
+22. Choose 'Startup Wizard'
+23. Once the new dialog appears click the 'Show Getting Started' tab and read the 
+		included documentation. The motors are EC motors for reference
+24. Follow the steps in the Getting Started Guide to finish the Startup Wizard
+25. Once the Startup Wizard is complete choose the 'Regulation Tuning' tab on 
+		the left hand side of the screen. 
+26. Once the new window opens choose 'Auto Tuning' then clock 'Next' 
+27. Click 'Start' then wait for tuning to finish, then click 'Finish'
+28. At the top of the 'Wizards tab' under Device Selection choose 
+		'EPOS2 [Node 2] 
+29. Repeat steps 22-27
+30. The motors are now configured. Save this file and open it whenever you 
+		are going to use the motors. 
+
+USING EPOS STUDIO AND SIMULINK
+To access the motors in Simulink you will need to set the motors to current mode 
+in EPOS studio. Follow these steps to set up the controller in current mode. 
+These steps will need to be preformed each time the motor controllers are turned on
+1. Open EPOS Studio and turn on the motor controllers. 
+2. In EPOS Studio open the configuration file that was made for the motors. 
+3. Connect the motor controller that has the CAN connection coming in from 
+		the target PC to the USB of the host computer.
+4. Connect to the motors in EPOS studio by going to 'Extras > Connect All' 
+5. Go to the 'Tools' tab on the left side of the screen. 
+6. Choose the 'Current Mode' selection from the Tools tab
+7. Enable EPOS studio on the lower left hand side of the new window by 
+	clicking the tab that says 'disabled'
+8. At the top left of the new window click the tab that says 'Current Mode'
+9. The motors are now ready to be controlled by Simulink. 
+
+CHECKING THE CAN SETTINGS
+Simulink uses a CAN connection to talk with the motor controllers. You can check 
+these settings by using the CANopen Wizard tool. 
+1. Open EPOS Studio and turn on the motor controllers. 
+2. In EPOS Studio open the configuration file that was made for the motors. 
+3. Connect the motor controller that has the CAN connection coming in from 
+		the target PC to the USB of the host computer.
+4. Connect to the motors in EPOS studio by going to 'Extras > Connect All' 
+5. Go to the 'Wizards' tab on the left side of the screen.
+6. Choose the 'CANopen Wizard' option
+7. Follow the steps and record the PDO settings you choose for each controller. 
+
+To test the connection follow these additional steps
+8. Open the simulink model CAN_test.slx
+9. Ensure that the settings choosen match the settings in the CANopen Wizard option. 
+10. If you are unsure if the settings match rerun the CANopen Wizard and ensure
+		that the numbers shown in the model match the numbers in the wizard
+11. Build the model 
+12. Follow the above instruction set to put the motors in controller mode. 
+12. Start the model
+13. You should see that the motors move back and forth. If the motors do not move
+		double check the CAN settings and that the motors are in Current Mode. 
+
