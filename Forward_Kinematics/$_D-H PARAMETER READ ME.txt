@@ -1,0 +1,12 @@
+D-H PARAMETER READ ME
+
+AUTHOR: Mark Gotthelf
+DATE: 6/28/17
+
+The D-H parameters are discussed in Devon Holley's thesis. 
+This information is included with other documentation in the 
+folder 'Forward Kinematics'. 
+The parameters are used in the MATLAB Simulink models to determine the XYZ
+location of the end effector of the robot. For this orthosis robot the end
+effector is joint 7, the center of the F/E joint. 
+If the robot is update new values should be calalculated for each DH parameter. 
