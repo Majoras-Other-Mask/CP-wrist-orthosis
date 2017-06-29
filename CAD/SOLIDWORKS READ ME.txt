@@ -1,0 +1,20 @@
+SOLIDWORKS MODEL README
+
+AUTHOR: Mark Gotthelf
+DATE: 6/28/17
+
+This is the most up to date Solidworks model for the wrist orthosis robot. 
+The model was created by Devon Holley and updated by Mark Gotthelf. 
+The model is accurate for all parts EXCEPT the slide. The slide in the model 
+is an old slide for the robot which was replaced in the summer of 2015. The new
+slide has an overall longer length but sits closer to the robot when fully retracted. 
+
+This model can be used to determine the following D-H parameters for the Forward Kinematics model. 
+These parameters are explained in Devon Holley's thesis. 
+		d1, a2, d4, a5, d6, a6
+
+In June 2017 Mark Gotthelf updated the track and trough in the model, 3D printed these parts
+at Marquette's DLL and installed them on the robot. The track was updated to match the actual part
+on the robot and printed because the track at that time was broke. The trough was updated with an
+increased thickness that way the nuts sat flush in the trough to prevent scratching. 
+
